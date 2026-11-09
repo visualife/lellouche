@@ -1,0 +1,6 @@
+# crawler leftovers, never commit
+cookies.txt
+hts-cache/
+hts-log.txt
+*.rar
+new.zip
