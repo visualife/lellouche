@@ -21,6 +21,11 @@
   .container_59093563_inner { background-image: image-set(url("../img/hero/smile-l.jpg") 1x, url("../img/hero/smile-full.jpg") 2x) !important; }
 }
 
+/* ---- 0b. Desktop hero: box follows the photo's 2.17:1 proportions, no crop ---- */
+@media (min-width: 993px) {
+  #container_59093563, .container_59093563_inner { height: min(46vw, 780px) !important; min-height: 0 !important; }
+}
+
 /* ---- 1. Text: no justified rivers, calmer hyphenation, all widths ---- */
 #body-container [class*="text-justify"],
 #body-container [class*="text-justify"] p,
