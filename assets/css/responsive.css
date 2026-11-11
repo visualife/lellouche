@@ -21,9 +21,10 @@
   .container_59093563_inner { background-image: image-set(url("../img/hero/smile-l.jpg") 1x, url("../img/hero/smile-full.jpg") 2x) !important; }
 }
 
-/* ---- 0b. Desktop hero: box follows the photo's 2.17:1 proportions, no crop ---- */
+/* ---- 0b. Desktop hero: original 480px height, photo anchored at the top (only the bottom is cropped) ---- */
 @media (min-width: 993px) {
-  #container_59093563, .container_59093563_inner { height: min(46vw, 780px) !important; min-height: 0 !important; }
+  #container_59093563, .container_59093563_inner { height: 480px !important; min-height: 0 !important; }
+  .container_59093563_inner { background-position: center top !important; }
 }
 
 /* ---- 1. Text: no justified rivers, calmer hyphenation, all widths ---- */
