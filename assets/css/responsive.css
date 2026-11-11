@@ -1,18 +1,25 @@
 /* responsive.css : overrides loaded after the CMS theme (self-hosted fixes)
    Remove-safe: delete the <link> and the site goes back to the raw theme. */
 
-/* ---- 0. Hero photo: original smile files, one per width (no crop, full resolution) ---- */
-#container_59093563 .container_59093563_inner,
+/* ---- 0. Hero photo: original smile files, sharp at every width and on 2x screens ---- */
 .container_59093563_inner {
   background-image: url("../img/hero/smile-ml.jpg") !important;
+  background-image: image-set(url("../img/hero/smile-ml.jpg") 1x, url("../img/hero/smile-mp.jpg") 2x) !important;
   background-size: cover !important;
   background-position: center center !important;
 }
-@media (min-width: 481px) { .container_59093563_inner { background-image: url("../img/hero/smile-mp.jpg") !important; } }
-@media (min-width: 641px) { .container_59093563_inner { background-image: url("../img/hero/smile-1024-tp.jpg") !important; } }
-@media (min-width: 1025px) { .container_59093563_inner { background-image: url("../img/hero/smile-ds.jpg") !important; } }
-@media (min-width: 1281px) { .container_59093563_inner { background-image: url("../img/hero/smile-dl.jpg") !important; } }
-@media (min-width: 1537px) { .container_59093563_inner { background-image: url("../img/hero/smile-l.jpg") !important; } }
+@media (min-width: 481px) {
+  .container_59093563_inner { background-image: image-set(url("../img/hero/smile-mp.jpg") 1x, url("../img/hero/smile-1024-tp.jpg") 2x) !important; }
+}
+@media (min-width: 641px) {
+  .container_59093563_inner { background-image: image-set(url("../img/hero/smile-1024-tp.jpg") 1x, url("../img/hero/smile-ds.jpg") 2x) !important; }
+}
+@media (min-width: 1025px) {
+  .container_59093563_inner { background-image: image-set(url("../img/hero/smile-ds.jpg") 1x, url("../img/hero/smile-l.jpg") 2x) !important; }
+}
+@media (min-width: 1441px) {
+  .container_59093563_inner { background-image: image-set(url("../img/hero/smile-l.jpg") 1x, url("../img/hero/smile-full.jpg") 2x) !important; }
+}
 
 /* ---- 1. Text: no justified rivers, calmer hyphenation, all widths ---- */
 #body-container [class*="text-justify"],
