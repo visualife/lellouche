@@ -24,6 +24,8 @@ public/
 - Name unified to "Dr Patrick Lellouche" (JSON-LD name + alternateName, og:site_name, header and footer titles).
 - sitemap.xml (18 URLs, clean URLs on dr-patrick-lellouche.chirurgiens-dentistes.fr) and robots.txt added; privacy/about/contact.html are redirect stubs.
 
+- Responsive pass: `assets/css/responsive.css` (linked last on every page; delete the link to revert). Justified text now left-aligned everywhere (no stretched word gaps), phone gutters 16px instead of 40-70px, hero shows the whole smile (was a 700px-tall crop), footer menus centred (no staircase), absolute desktop blocks stack on phones, price tables scroll inside their box, body clears the fixed bottom bar.
+
 ## TO CLEAN LATER
 
 ### Missing files (not in mirror, 404 on WD CDN: get from the Webdentiste admin / originals)
