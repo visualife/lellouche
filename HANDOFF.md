@@ -24,6 +24,7 @@ public/
 - Name unified to "Dr Patrick Lellouche" (JSON-LD name + alternateName, og:site_name, header and footer titles).
 - sitemap.xml (18 URLs, clean URLs on dr-patrick-lellouche.chirurgiens-dentistes.fr) and robots.txt added; privacy/about/contact.html are redirect stubs.
 
+- Hero photo: now the original smile files from `smile/correct` (`assets/img/hero/smile-*.jpg`), one per width via `responsive.css`. Closes tracker `hero`.
 - Responsive pass: `assets/css/responsive.css` (linked last on every page; delete the link to revert). Justified text now left-aligned everywhere (no stretched word gaps), phone gutters 16px instead of 40-70px, hero shows the whole smile (was a 700px-tall crop), footer menus centred (no staircase), absolute desktop blocks stack on phones, price tables scroll inside their box, body clears the fixed bottom bar.
 
 ## TO CLEAN LATER
@@ -47,7 +48,6 @@ Raw list: `missing-refs.txt`. Search both CSS references with `grep -n "10517611
 
 ### Not doable on a static host (tracker items)
 - Markdown responses for agents (`Accept: text/markdown`), real 301 redirects, root `/` serving French vs English: needs server config.
-- Hero image is cropped on phones (background cover, tracker `hero`); needs the original image files.
 
 ### Domain / URLs
 - sitemap.xml, robots.txt and the privacy/about/contact stubs use the domain dr-patrick-lellouche.chirurgiens-dentistes.fr; change it if the final domain differs. Sitemap uses extensionless URLs (works on GitHub Pages).

@@ -1,6 +1,19 @@
 /* responsive.css : overrides loaded after the CMS theme (self-hosted fixes)
    Remove-safe: delete the <link> and the site goes back to the raw theme. */
 
+/* ---- 0. Hero photo: original smile files, one per width (no crop, full resolution) ---- */
+#container_59093563 .container_59093563_inner,
+.container_59093563_inner {
+  background-image: url("../img/hero/smile-ml.jpg") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+@media (min-width: 481px) { .container_59093563_inner { background-image: url("../img/hero/smile-mp.jpg") !important; } }
+@media (min-width: 641px) { .container_59093563_inner { background-image: url("../img/hero/smile-1024-tp.jpg") !important; } }
+@media (min-width: 1025px) { .container_59093563_inner { background-image: url("../img/hero/smile-ds.jpg") !important; } }
+@media (min-width: 1281px) { .container_59093563_inner { background-image: url("../img/hero/smile-dl.jpg") !important; } }
+@media (min-width: 1537px) { .container_59093563_inner { background-image: url("../img/hero/smile-l.jpg") !important; } }
+
 /* ---- 1. Text: no justified rivers, calmer hyphenation, all widths ---- */
 #body-container [class*="text-justify"],
 #body-container [class*="text-justify"] p,
