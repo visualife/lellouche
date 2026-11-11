@@ -3,22 +3,22 @@
 
 /* ---- 0. Hero photo: original smile files, sharp at every width and on 2x screens ---- */
 .container_59093563_inner {
-  background-image: url("../img/hero/smile-ml.jpg") !important;
-  background-image: image-set(url("../img/hero/smile-ml.jpg") 1x, url("../img/hero/smile-mp.jpg") 2x) !important;
+  background-image: url("../img/hero/patrick-lellouche.chirurgiens-dentistes-sourire-dents-blanches-ml.jpg") !important;
+  background-image: image-set(url("../img/hero/patrick-lellouche.chirurgiens-dentistes-sourire-dents-blanches-ml.jpg") 1x, url("../img/hero/patrick-lellouche.chirurgiens-dentistes-sourire-dents-blanches-mp.jpg") 2x) !important;
   background-size: cover !important;
   background-position: center center !important;
 }
 @media (min-width: 481px) {
-  .container_59093563_inner { background-image: image-set(url("../img/hero/smile-mp.jpg") 1x, url("../img/hero/smile-1024-tp.jpg") 2x) !important; }
+  .container_59093563_inner { background-image: image-set(url("../img/hero/patrick-lellouche.chirurgiens-dentistes-sourire-dents-blanches-mp.jpg") 1x, url("../img/hero/patrick-lellouche.chirurgiens-dentistes-sourire-dents-blanches-1024-tp.jpg") 2x) !important; }
 }
 @media (min-width: 641px) {
-  .container_59093563_inner { background-image: image-set(url("../img/hero/smile-1024-tp.jpg") 1x, url("../img/hero/smile-ds.jpg") 2x) !important; }
+  .container_59093563_inner { background-image: image-set(url("../img/hero/patrick-lellouche.chirurgiens-dentistes-sourire-dents-blanches-1024-tp.jpg") 1x, url("../img/hero/patrick-lellouche.chirurgiens-dentistes-sourire-dents-blanches-ds.jpg") 2x) !important; }
 }
 @media (min-width: 1025px) {
-  .container_59093563_inner { background-image: image-set(url("../img/hero/smile-ds.jpg") 1x, url("../img/hero/smile-l.jpg") 2x) !important; }
+  .container_59093563_inner { background-image: image-set(url("../img/hero/patrick-lellouche.chirurgiens-dentistes-sourire-dents-blanches-ds.jpg") 1x, url("../img/hero/patrick-lellouche.chirurgiens-dentistes-sourire-dents-blanches-l.jpg") 2x) !important; }
 }
 @media (min-width: 1441px) {
-  .container_59093563_inner { background-image: image-set(url("../img/hero/smile-l.jpg") 1x, url("../img/hero/smile-full.jpg") 2x) !important; }
+  .container_59093563_inner { background-image: image-set(url("../img/hero/patrick-lellouche.chirurgiens-dentistes-sourire-dents-blanches-l.jpg") 1x, url("../img/hero/patrick-lellouche.chirurgiens-dentistes-sourire-dents-blanches.jpg") 2x) !important; }
 }
 
 /* ---- 0b. Hero box: 480px on every screen, photo centred (crop equal top and bottom) ---- */
