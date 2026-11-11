@@ -20,6 +20,10 @@ public/
 - Footer links "Hygiène & Asepsie" / "Honoraires & remboursement" removed (articles deleted).
 - cgu.html + politique-de-confidentialite.html now use dr.lellouche.patrick@gmail.com (DPO line reduced to that single address).
 
+- Cookie popup (Axeptio) removed from all pages, SDK deleted. GA4 sits in a consent `<template>` that only Axeptio activated, so GA4 is now OFF (Plausible, cookieless, still runs). To re-enable GA4 you need a consent solution first (CNIL).
+- Name unified to "Dr Patrick Lellouche" (JSON-LD name + alternateName, og:site_name, header and footer titles).
+- sitemap.xml (18 URLs, clean URLs on dr-patrick-lellouche.chirurgiens-dentistes.fr) and robots.txt added; privacy/about/contact.html are redirect stubs.
+
 ## TO CLEAN LATER
 
 ### Missing files (not in mirror, 404 on WD CDN: get from the Webdentiste admin / originals)
@@ -36,10 +40,15 @@ Raw list: `missing-refs.txt`. Search both CSS references with `grep -n "10517611
 - **Forms** (`contactez-nous.html`, `prendre-rdv.html`): action posts to `https://dr-patrick-lellouche.chirurgiens-dentistes.fr/api-website-feature/content-forms/…`, a WD backend. Needs own handler (owner will do).
 - **mentions-legales.html**: "Éditeur et hébergeur du site" block still names ENPS / info@webdentiste.eu (address, RCS, fax, capital). Rewrite with cabinet as publisher + real host. Also "Responsable de la rédaction : [XX…" placeholder.
 - **politique-de-confidentialite.html**: still mentions a HDS-certified hosting subcontractor (WD's); update to the real host.
-- **Axeptio** (`assets/js/vendor/axeptio-sdk.js`, clientId `67ae184771bd500becbb1dd3`) and **Plausible** (`assets/js/vendor/plausible.js`, key `pa-waT94pCb48KIcNMT-6IZr`): check the accounts belong to the cabinet, not WD. GA4 `G-HPZ47PMVMT` stays.
+- **Plausible** (`assets/js/vendor/plausible.js`, key `pa-waT94pCb48KIcNMT-6IZr`): check the accounts belong to the cabinet, not WD. GA4 `G-HPZ47PMVMT` stays.
 - `appVisitor.config` in each page (`pagePath`, `sourcePageUrl`, `requestReferer`) still holds old domain values; harmless, remove with the CMS script when ready.
 
+### Not doable on a static host (tracker items)
+- Markdown responses for agents (`Accept: text/markdown`), real 301 redirects, root `/` serving French vs English: needs server config.
+- Hero image is cropped on phones (background cover, tracker `hero`); needs the original image files.
+
 ### Domain / URLs
+- sitemap.xml, robots.txt and the privacy/about/contact stubs use the domain dr-patrick-lellouche.chirurgiens-dentistes.fr; change it if the final domain differs. Sitemap uses extensionless URLs (works on GitHub Pages).
 - `canonical`, `og:url`, `hreflang` are relative (`index.html`). Make absolute once the final domain is fixed.
 - `og:image`, `twitter:image` and JSON-LD images use `https://dr-patrick-lellouche.chirurgiens-dentistes.fr`; change if the domain differs.
 - Pages link to `.html`; add clean-URL rewrites if `/le-cabinet` style is wanted (JSON-LD already uses clean URLs).
